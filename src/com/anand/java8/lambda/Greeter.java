@@ -10,15 +10,19 @@ public class Greeter {
 		 */
 		
 		Greeting myfunction = () -> System.out.println("Hellow World");
-		myfunction.perform();
+		//myfunction.perform();
 		
 		Greeting greetingFunc = new Greeting() {
 			public void perform() {
-				System.out.println("Hellow World");
+				System.out.println("Hellow World Anonymous inner class");
 			}
 		};
 		
-		greetingFunc.perform();
+		//greetingFunc.perform();
+		Greeter greet = new Greeter();
+		greet.greet(greetingFunc);
+		greet.greet(myfunction);
+		
 		
 	}
 	
