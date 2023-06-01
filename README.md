@@ -1,6 +1,7 @@
 # Core Java 
 Practical examples of Various concepts in Core Java
-##Java8 Features
+
+## Java8 Features
 Main intention behind java8 is simplified code and to introduce functional programming.
 
 * **1. Lambda Expressions:** The main objective of lambda expression is to enable functional programming. Using lambda, we can pass procedure or behavior as an argument. We can also write more readable, maintainable and concise code. Also we can enable parallel processing. Lambdas can be used in a certain type of interfaces. We use interface as type for the lambda expression, that interface must contain only one abstract method i.e nothing but functional interface. Lambda expressions are also called as anonymous functions or closures. We can even pass lambda expressions as arguments to other functions.
