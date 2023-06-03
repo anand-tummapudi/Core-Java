@@ -23,7 +23,7 @@ Main intention behind java8 is simplified code and to introduce functional progr
 		ii. Example of terminal operators are collect(), forEach(), reduce(), toArray(), count(), min(),max(), anyMatch(), allMatch(), noneMatch(), findAny(), findFirst()	
 	2. 
 
-* **6. Date and Time API (Joda API):**
+* **6. Date and Time API (Joda API):** 
 
 * **7. Optional classes:** Java8 has introduced a new optional utility class in java.util package. This class can help in avoiding null checks and null pointer exceptions. We can view Optional as a single value container that either contains a value or doesn't.The class was introduced in the java. util package to remove the need for multiple null checks to protect against the dreaded NullPointerExceptions during run-time.
 1. Optional is a final class, so we can't extend this class.

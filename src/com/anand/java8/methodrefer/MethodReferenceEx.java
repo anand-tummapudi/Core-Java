@@ -61,7 +61,7 @@ public class MethodReferenceEx {
 		String []array = {"Anand", "Sam", "Hello", "Canan","Jog","Balu"};
 		Arrays.sort(array,(s1,s2)->s1.compareTo(s2));
 		
-		Arrays.asList(array).forEach(s -> System.out.println(s));
+		Arrays.asList(array).forEach(System.out::println);
 		
 		//Adding Method reference
 		Arrays.sort(array,String::compareTo);
