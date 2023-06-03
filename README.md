@@ -21,9 +21,14 @@ Main intention behind java8 is simplified code and to introduce functional progr
 	1. There are two types of operators allowed in streams i. terminal operators ii. intermediate operators. On a single stream, we can apply multiple intermediate operations but can apply only one terminal operator.
 		i. Example of intermediate operators are map, filter, sorted, flatMap, distinct, peek, limit, skip
 		ii. Example of terminal operators are collect(), forEach(), reduce(), toArray(), count(), min(),max(), anyMatch(), allMatch(), noneMatch(), findAny(), findFirst()	
-	2. 
+	2. Steams feature provides many other provisions or methods to perform sortings, aggregations of data easily with concise code.
 
 * **6. Date and Time API (Joda API):** 
+	1. There are multiple issues with the existing date API, so in Java8 majority of them are addressed.
+		i. The first problem with existing date api is that the same Date class is available in many other packages like sql and etc. So it is ambiguous to select appropriate date class. 
+		ii. When we careta a date object and print, time also displays along with the date.
+		iii. For formatting the date into required format, we need to use SimpleDateFormat package which is from java.text package.
+		iv. It is bit difficult to play with timezone t the same time.  
 
 * **7. Optional classes:** Java8 has introduced a new optional utility class in java.util package. This class can help in avoiding null checks and null pointer exceptions. We can view Optional as a single value container that either contains a value or doesn't.The class was introduced in the java. util package to remove the need for multiple null checks to protect against the dreaded NullPointerExceptions during run-time.
 1. Optional is a final class, so we can't extend this class.
