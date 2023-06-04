@@ -33,13 +33,13 @@ Main intention behind java8 is simplified code and to introduce functional progr
 
 * **7. Optional classes:** Java8 has introduced a new optional utility class in java.util package. This class can help in avoiding null checks and null pointer exceptions. We can view Optional as a single value container that either contains a value or doesn't.The class was introduced in the java. util package to remove the need for multiple null checks to protect against the dreaded NullPointerExceptions during run-time.
 
-* i.	Optional is a final class, so we can't extend this class.
-* ii.	Of, empty, ofNullable are the three static methods used to create optional class object.
-* iii.	Whenever we are not sure, whether object contains value or not in such case we use ofNullable method. It returns the empty object in case of the value is null.
-* iv. When we want to get the value from Optional class, we use get() method provided. If there is no value in the object in such case the get method returns no such element exception. In real time we never call get() method directly, we can check it by using isEmpty() or isPresent() method and then call get method.
-* v. 	We can use orElse method which allows you to check whether the objecct contains value or else return a default value.
-* vi.	filter() method is used to filter the data ofan optional object. It accepts Predicate type oflambda as an argument.
-* vii.	map() method in Optional class provides a way to totransform value from one type to other. 
+	* Optional is a final class, so we can't extend this class.
+	* Of, empty, ofNullable are the three static methods used to create optional class object.
+	* Whenever we are not sure, whether object contains value or not in such case we use ofNullable method. It returns the empty object in case of the value is null.
+	*  When we want to get the value from Optional class, we use get() method provided. If there is no value in the object in such case the get method returns no such element exception. In real time we never call get() method directly, we can check it by using isEmpty() or isPresent() method and then call get method.
+	*  We can use orElse method which allows you to check whether the objecct contains value or else return a default value.
+	*  filter() method is used to filter the data ofan optional object. It accepts Predicate type oflambda as an argument.
+	*  map() method in Optional class provides a way to totransform value from one type to other. 
 
 ## Java9 Features
 	A high level overview of Java9 features.
@@ -64,9 +64,9 @@ Main intention behind java8 is simplified code and to introduce functional progr
 
 *	**Http/2 Client API**
 
-* 11. **Process API Updates** - Can capture complete process information.
+* 	**Process API Updates** - Can capture complete process information.
 
-* 12. **G1 GC** - G1 GC garbage collecotor introduced in java6 from java9 onwards it will be the default garbage collecotr.  
+* 	**G1 GC** - G1 GC garbage collecotor introduced in java6 from java9 onwards it will be the default garbage collecotr.  
 	
 
 ## Java10 Features
