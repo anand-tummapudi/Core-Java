@@ -20,7 +20,7 @@ Main intention behind java8 is simplified code and to introduce functional progr
 
 * **5. Streams API:** Stream represents a sequence of objects from a source, which supports aggregate operations.
 	1. There are two types of operators allowed in streams i. terminal operators ii. intermediate operators. On a single stream, we can apply multiple intermediate operations but can apply only one terminal operator.
-		i. Example of intermediate operators are map, filter, sorted, flatMap, distinct, peek, limit, skip
+		i. Example of intermediate operators are map(), filter(), sorted(), flatMap(), distinct(), peek(), limit(), skip()
 		ii. Example of terminal operators are collect(), forEach(), reduce(), toArray(), count(), min(),max(), anyMatch(), allMatch(), noneMatch(), findAny(), findFirst()	
 	2. Steams feature provides many other provisions or methods to perform sortings, aggregations of data easily with concise code.
 
@@ -32,15 +32,16 @@ Main intention behind java8 is simplified code and to introduce functional progr
 		iv. It is bit difficult to play with timezone t the same time.  
 
 * **7. Optional classes:** Java8 has introduced a new optional utility class in java.util package. This class can help in avoiding null checks and null pointer exceptions. We can view Optional as a single value container that either contains a value or doesn't.The class was introduced in the java. util package to remove the need for multiple null checks to protect against the dreaded NullPointerExceptions during run-time.
-	i. Optional is a final class, so we can't extend this class.
-	ii. of, empty, ofNullable are the three static methods used to create optional class object.
-	iii. Whenever we are not sure, whether object contains value or not in such case we use ofNullable method. It returns the empty object in case of the value is null.
+	i.	Optional is a final class, so we can't extend this class.
+	ii.	Of, empty, ofNullable are the three static methods used to create optional class object.
+	iii.	Whenever we are not sure, whether object contains value or not in such case we use ofNullable method. It returns the empty object in case of the value is null.
 	iv. When we want to get the value from Optional class, we use get() method provided. If there is no value in the object in such case the get method returns no such element exception. In real time we never call get() method directly, we can check it by using isEmpty() or isPresent() method and then call get method.
-	v. We can use orElse method which allows you to check whether the objecct contains value or else return a default value.
-	vi. filter() method is used to filter the data ofan optional object. It accepts Predicate type oflambda as an argument.
-	vii. map() method in Optional class provides a way to totransform value from one type to other. 
+	v. 	We can use orElse method which allows you to check whether the objecct contains value or else return a default value.
+	vi.	filter() method is used to filter the data ofan optional object. It accepts Predicate type oflambda as an argument.
+	vii.	map() method in Optional class provides a way to totransform value from one type to other. 
 
 ## Java9 Features
+
 	1. **Interface private Methods** In Java9, we can create private methods inside an interface. These private methods help to share common code between non abstract methods. If we create private methods in interface before Java9, it gives compile time error. 
 	2. **Try with Resources** try with resoure is introduced in java7 but there is a limitation to it as it can be applied only to the resourcs declared inside it. Where as in Java 9, it can be applied to the resources declared outside to it.
 	3. **Anonymous classes** - <> diamond operator enhancement is applicable for anonymous inner classes.
