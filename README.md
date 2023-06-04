@@ -46,14 +46,14 @@ A high level overview of Java9 features.
 	
 *	**Interface private Methods** In Java9, we can create private methods inside an interface. These private methods help to share common code between non abstract methods. If we create private methods in interface before Java9, it gives compile time error.
  
-*	**Try with Resources** try with resoure is introduced in java7 but there is a limitation to it as it can be applied only to the resourcs declared inside it. Where as in Java 9, it can be applied to the resources declared outside to it.
+*	**Try with Resources** try with resoure is introduced in java7 but there is a limitation to it as it can be applied only to the resourcs declared inside it meaning that we need to create the resources inside the try block or we need to create member variable for the resources created outside try block. Where as in Java 9, it can be applied to the resources declared outside to it.
 
 *	**Anonymous classes** - <> diamond operator enhancement is applicable for anonymous inner classes.
 
 *	**@SafeVarargs annotation** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
 
-*	**Collection factory methods** Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list,set and map of small number of elements.
-
+*	**Collection factory methods** Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list,set and map of small number of elements. Till java8, if we want to create immutable collections, we need to create a collection and then apply collection.unModifiable method option. From java9, we can use factory methods like List.of() etc. to create immutable collections.
+ 
 *	**Stream API improvement** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
 
 *	**JShell** The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. JShell is a Read-Evaluate-Print Loop tool (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
@@ -62,9 +62,9 @@ A high level overview of Java9 features.
 
 *	**JLINK** - Java Linker - From java9, we can create our own customised JRE using JLink.
 
-*	**Http/2 Client API**
+*	**Http/2 Client API** - If we want to consumer any web services over http till java8, we can use only HTTPURLConnection approach which is very old, allows only blocking mode, supports only text data. Java introduces HTTP/2 client in java 9 using which we can send http request calls both blocking and non blocking mode, supports both text and binary data.
 
-* 	**Process API Updates** - Can capture complete process information.
+* 	**Process API Updates** - Can capture complete process information. ProcessHandle class introduced in java.lang package provided many methods to play with process information like current running process etc. Ex: ProcessHandle.current.pid;
 
 * 	**G1 GC** - G1 GC garbage collecotor introduced in java6 from java9 onwards it will be the default garbage collecotr.  
 	
