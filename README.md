@@ -42,7 +42,7 @@ Main intention behind java8 is simplified code and to introduce functional progr
 	*  map() method in Optional class provides a way to totransform value from one type to other. 
 
 ## Java9 Features
-	A high level overview of Java9 features.
+A high level overview of Java9 features.
 	
 *	**Interface private Methods** In Java9, we can create private methods inside an interface. These private methods help to share common code between non abstract methods. If we create private methods in interface before Java9, it gives compile time error.
  
