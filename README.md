@@ -1,5 +1,5 @@
 # Core Java 
-Here I am trying to describe about the new features relesed in various java versions onhigh level for quick understanding.
+Here I am trying to describe about the new features relesed in various java versions on high level for quick understanding.
 
 ## Java8 Features
 Main intention behind java8 is simplified code and to introduce functional programming.
@@ -70,10 +70,37 @@ A high level overview of Java9 features.
 	
 
 ## Java10 Features
+A high level understanding of java 10 features.
+
+* Local variable type inference - Starting from java10, for declaration of variable type we can use **var** instead of respective data type. The copiler will be able to determine the type based on the type of data assigned. If we are not initializing the value to a local variable, then compiler does not allow to use var type. For method aruments, we can't use var. For global or class level variables, we can't use var.  
+
+* Consolidate the JDK forest into a single repository
+* Garbage collector interface
+* Parallel full GC for G1.
+* Application class data sharing
+* Thread local hand shakes
+* Heap allocation on alternative memory devices.
+* Experimental java based JIT compiler.
+* Root certificates.
 
 ## Java11 Features
+A high level understanding of Java 11 features.
+
+* Starting from JDK 11, there is no separate installation of JDK and JRE. Installation of JDK will automatically install JRE in it.
+* Single file execution - We need not run java compiler javac and run the java file with class file. We can directly run the .java file with java interpreter and jdk will take care of the internal compilation and it runs the file. 
+* java.util.collecion package new method toArray added, which can be used to convert a collection to an array.
+* Local variable type for lamda expression arguments. We can apply var data type for the variable inside lambda expression method arguments.
+* String API changes - There are some additional methods added to String api that are isBlank(), lines(), Strip(), stripLeading(), stripTrailing() and repeat().
+* Optional.isEmpty() 
+* Fileread and write string - For readingand writing of files Files.readString() and Files.writeString() methods added.
+* Http client APi has been standardized in java11. As partof this, the previously introduced incubating API has been removed. Http types will be imported from the standard package, java.net.http.
 
 ## Java12 Features
+Java 12 introduces a lot of new lnguage features. Here is a high level understanding of the new additions.
+* String class new methods - i. indent adjusts the indentation of each line based on the integer parameter.ii. transform() - It accepts a single argument function as a parameter that will be applied to the string.
+* Files::mismatch method - It is used to compare two files and find the position of the first mismatched byte in their contents.
+* TeeingCollector - As an addition to the Collectors class, a new teeing collector was introduced.
+* Compact Number Format - It is designed to represent a number in a shorter form based on the patterns provided by a given locale. We can get its instance via the getCompactNumberInstance method in NumberFormat class.  
 
 ## Java13 Features
 
