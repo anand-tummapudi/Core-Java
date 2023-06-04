@@ -41,19 +41,32 @@ Main intention behind java8 is simplified code and to introduce functional progr
 	vii.	map() method in Optional class provides a way to totransform value from one type to other. 
 
 ## Java9 Features
+	
+	A high level overview of Java9 features.
+	
+* 1. **Interface private Methods** In Java9, we can create private methods inside an interface. These private methods help to share common code between non abstract methods. If we create private methods in interface before Java9, it gives compile time error.
+ 
+* 2. **Try with Resources** try with resoure is introduced in java7 but there is a limitation to it as it can be applied only to the resourcs declared inside it. Where as in Java 9, it can be applied to the resources declared outside to it.
 
-	1. **Interface private Methods** In Java9, we can create private methods inside an interface. These private methods help to share common code between non abstract methods. If we create private methods in interface before Java9, it gives compile time error. 
-	2. **Try with Resources** try with resoure is introduced in java7 but there is a limitation to it as it can be applied only to the resourcs declared inside it. Where as in Java 9, it can be applied to the resources declared outside to it.
-	3. **Anonymous classes** - <> diamond operator enhancement is applicable for anonymous inner classes.
-	4. **@SafeVarargs annotation** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
-	5. **Collection factory methods** Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list,set and map of small number of elements.
-	6. **Stream API improvement** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
-	7. **JShell** The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. JShell is a Read-Evaluate-Print Loop tool (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
-	8. **JPMS** - Java Platform Module System - java platform is modularised. Java hell or jar hell problem is addressed. Addressed claa defininition not found issue and various internal class dependencies.
-	9. **JLINK** - Java Linker - From java9, we can create our own customised JRE using JLink.
-	10. **Http/2 Client API**
-	11. **Process API Updates** - Can capture complete process information.
-	12. **G1 GC** - G1 GC garbage collecotor introduced in java6 from java9 onwards it will be the default garbage collecotr.  
+* 3. **Anonymous classes** - <> diamond operator enhancement is applicable for anonymous inner classes.
+
+* 4. **@SafeVarargs annotation** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
+
+* 5. **Collection factory methods** Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list,set and map of small number of elements.
+
+* 6. **Stream API improvement** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
+
+* 7. **JShell** The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. JShell is a Read-Evaluate-Print Loop tool (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
+
+* 8. **JPMS** - Java Platform Module System - java platform is modularised. Java hell or jar hell problem is addressed. Addressed claa defininition not found issue and various internal class dependencies.
+
+* 9. **JLINK** - Java Linker - From java9, we can create our own customised JRE using JLink.
+
+* 10. **Http/2 Client API**
+
+* 11. **Process API Updates** - Can capture complete process information.
+
+* 12. **G1 GC** - G1 GC garbage collecotor introduced in java6 from java9 onwards it will be the default garbage collecotr.  
 	
 
 ## Java10 Features
