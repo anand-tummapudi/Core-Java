@@ -33,37 +33,36 @@ Main intention behind java8 is simplified code and to introduce functional progr
 
 * **7. Optional classes:** Java8 has introduced a new optional utility class in java.util package. This class can help in avoiding null checks and null pointer exceptions. We can view Optional as a single value container that either contains a value or doesn't.The class was introduced in the java. util package to remove the need for multiple null checks to protect against the dreaded NullPointerExceptions during run-time.
 
-i.	Optional is a final class, so we can't extend this class.
-ii.	Of, empty, ofNullable are the three static methods used to create optional class object.
-iii.	Whenever we are not sure, whether object contains value or not in such case we use ofNullable method. It returns the empty object in case of the value is null.
-iv. When we want to get the value from Optional class, we use get() method provided. If there is no value in the object in such case the get method returns no such element exception. In real time we never call get() method directly, we can check it by using isEmpty() or isPresent() method and then call get method.
-v. 	We can use orElse method which allows you to check whether the objecct contains value or else return a default value.
-vi.	filter() method is used to filter the data ofan optional object. It accepts Predicate type oflambda as an argument.
-vii.	map() method in Optional class provides a way to totransform value from one type to other. 
+* i.	Optional is a final class, so we can't extend this class.
+* ii.	Of, empty, ofNullable are the three static methods used to create optional class object.
+* iii.	Whenever we are not sure, whether object contains value or not in such case we use ofNullable method. It returns the empty object in case of the value is null.
+* iv. When we want to get the value from Optional class, we use get() method provided. If there is no value in the object in such case the get method returns no such element exception. In real time we never call get() method directly, we can check it by using isEmpty() or isPresent() method and then call get method.
+* v. 	We can use orElse method which allows you to check whether the objecct contains value or else return a default value.
+* vi.	filter() method is used to filter the data ofan optional object. It accepts Predicate type oflambda as an argument.
+* vii.	map() method in Optional class provides a way to totransform value from one type to other. 
 
 ## Java9 Features
-	
 	A high level overview of Java9 features.
 	
-* 1. **Interface private Methods** In Java9, we can create private methods inside an interface. These private methods help to share common code between non abstract methods. If we create private methods in interface before Java9, it gives compile time error.
+*	**Interface private Methods** In Java9, we can create private methods inside an interface. These private methods help to share common code between non abstract methods. If we create private methods in interface before Java9, it gives compile time error.
  
-* 2. **Try with Resources** try with resoure is introduced in java7 but there is a limitation to it as it can be applied only to the resourcs declared inside it. Where as in Java 9, it can be applied to the resources declared outside to it.
+*	**Try with Resources** try with resoure is introduced in java7 but there is a limitation to it as it can be applied only to the resourcs declared inside it. Where as in Java 9, it can be applied to the resources declared outside to it.
 
-* 3. **Anonymous classes** - <> diamond operator enhancement is applicable for anonymous inner classes.
+*	**Anonymous classes** - <> diamond operator enhancement is applicable for anonymous inner classes.
 
-* 4. **@SafeVarargs annotation** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
+*	**@SafeVarargs annotation** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
 
-* 5. **Collection factory methods** Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list,set and map of small number of elements.
+*	**Collection factory methods** Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list,set and map of small number of elements.
 
-* 6. **Stream API improvement** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
+*	**Stream API improvement** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
 
-* 7. **JShell** The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. JShell is a Read-Evaluate-Print Loop tool (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
+*	**JShell** The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. JShell is a Read-Evaluate-Print Loop tool (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
 
-* 8. **JPMS** - Java Platform Module System - java platform is modularised. Java hell or jar hell problem is addressed. Addressed claa defininition not found issue and various internal class dependencies.
+*	**JPMS** - Java Platform Module System - java platform is modularised. Java hell or jar hell problem is addressed. Addressed claa defininition not found issue and various internal class dependencies.
 
-* 9. **JLINK** - Java Linker - From java9, we can create our own customised JRE using JLink.
+*	**JLINK** - Java Linker - From java9, we can create our own customised JRE using JLink.
 
-* 10. **Http/2 Client API**
+*	**Http/2 Client API**
 
 * 11. **Process API Updates** - Can capture complete process information.
 
