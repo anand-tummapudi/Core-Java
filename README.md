@@ -54,7 +54,11 @@ A high level overview of Java9 features.
 
 *	**Collection factory methods** Factory methods are special type of static methods that are used to create unmodifiable instances of collections. It means we can use these methods to create list,set and map of small number of elements. Till java8, if we want to create immutable collections, we need to create a collection and then apply collection.unModifiable method option. From java9, we can use factory methods like List.of() etc. to create immutable collections.
  
-*	**Stream API improvement** It is an annotation which applies on a method or constructor that takes varargs parameters. It is used to ensure that the method does not perform unsafe operations on its varargs parameters.
+*	**Stream API improvements** 
+1. takeWhile() - It returns, if the stream is ordered. A stream consisting of a subset of elements taken from this stream that match the given predicate.
+2. dropWhile() - It retuns, if this stream is ordered. A stream consisting of the remaining elements of this stream after dropping a subset of elements that match the given predicate.
+3. ofNullable() - It returns a sequentia stream containing a single element, if not null. Otherwise it returns an empty stream.
+4. iterate() - This method allows us to iterate stream elements till the specified condition. 
 
 *	**JShell** The Java Shell tool (JShell) is an interactive tool for learning the Java programming language and prototyping Java code. JShell is a Read-Evaluate-Print Loop tool (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
 
