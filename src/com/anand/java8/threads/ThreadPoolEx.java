@@ -11,7 +11,6 @@ public class ThreadPoolEx {
 
 		ExecutorService executorService = Executors.newFixedThreadPool(10);
 		Future<String> future = executorService.submit(()-> "Hello World");
-		
 		try {
 			String result = future.get();
 			System.out.println("Result:"+result);
@@ -22,7 +21,5 @@ public class ThreadPoolEx {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
-
 }
