@@ -41,6 +41,12 @@ Main intention behind java8 is simplified code and to introduce functional progr
 	*  filter() method is used to filter the data ofan optional object. It accepts Predicate type oflambda as an argument.
 	*  map() method in Optional class provides a way to totransform value from one type to other. 
 
+* **8. Thread Pools (Executors):** 
+	* In java threads are mapped to system-level threads, which are the operating system resources.
+	* The thread pool pattern helps in saving resources in a multi-threaded application and to contain the parallelism in certain pre defined limits.
+	* When we use thread pool, we write our concurrent code in the form of parallel tasks and submit them for execution to an instance of hread pool. This instance controls several re-used threads for executing these tasks.
+	* **Executors, Executor and ExecutorService** Executors helper class contains several methods for the creation of pre-configured thread pool instances. We use Executor and ExecutorService interfaces to work with different thread pool implementations. Executor interface has a single execute mehod, to submit runnable instances for execution. The ExecutorService interface contains a large number of methods to control the progress of the tasks and manage the termination of service. 
+
 ## Java9 Features
 A high level overview of Java9 features.
 	
