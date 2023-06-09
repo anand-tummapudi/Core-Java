@@ -2,7 +2,7 @@
 Here I am trying to describe about the new features relesed in various java versions on high level for quick understanding.
 ## General Java Concepts
 
-### Multithreading### 
+#### Multithreading
 A thread is nothing but a small process under execution. Each therad will have its own pah of execution and exceptions in one thread will not effect the ececution of other threads. 
 * In java, we can create threads in 2 ways. One by extending thread class and second one is by implementing Runnable interface.
 * If we create therad by extending Thread class, we can override the run method and directly run the same class instance by calling start or run method. If we create thread by extending Thread class, we will not be able to extend the class with any other class as java doesn't support multiple inheritance.
