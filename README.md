@@ -6,7 +6,26 @@ Here I am trying to describe about the new features relesed in various java vers
 A thread is nothing but a small process under execution. Each therad will have its own pah of execution and exceptions in one thread will not effect the ececution of other threads. 
 * In java, we can create threads in 2 ways. One by extending thread class and second one is by implementing Runnable interface.
 * If we create therad by extending Thread class, we can override the run method and directly run the same class instance by calling start or run method. If we create thread by extending Thread class, we will not be able to extend the class with any other class as java doesn't support multiple inheritance.
-* If we create thread by implementing Runnable interface, we need to create an object of Thread class and pass the implemntation lass reference to run it. When we use runnable interface we can extend the implementation class either with another class and also implement any other interfaces if required.
+* If we create thread by implementing Runnable interface, we need to create an object of Thread class and pass the implemntation class reference to run it. When we use Runnable interface we can extend the implementation class either with another class and also implement any other interfaces if required.
+
+#### Java Serialization
+- Serialization is the process of coverting an object into a sequence of bytes which can be persisted to a disk or a database. Coverting the sequence of bytes into object is called deserialization.
+- A java object is serializable if its class or any of its subclass implements java.io.Serializable or Externalizable interface.
+- The entire process of serialization and deserialization is JVM independent meanthing that an object can be serialized in one platform and can be deserialized in a different platform.
+- ObjectInputStream and ObjectOutputStream are mainly used classes for Serialization and Deserialization.
+- Eternalization provides implementation logic control to the application by overriding readExternal and writeExternal methods. In serialization JVM ignores transient variable during serialization and deserialization. In Externalization, programmer can write his own logic to ignore some of the variables during externalization of objects.
+
+#### Java Object cloning
+
+
+#### Java Memory Management
+In Java thereare 2 types of memories i. Stack ii. Heap
+
+- **Stack-** Is used for static memory allocation. It is used for storing variables and method execution. It follows LIFO algorithm. Variables that are allocated on the stack are accessible directly from memory, thus these can run very fast.
+- **Heap-** Is used for storing objects and static variables. Heap is used for dynamic memory allocation. Accessing the objects from heap takes more time. In heap there will be two areas young generation and old generation. Heap follows FIFO algorithm.
+- **Garbage Collection-** Garbage is nothing but unreferenced objects in the memory. Garbage collection is the process of destroying the unreferenced objects. In Java, garbage collection is performed automatically. The finalize() method is invoked before an unreferenced object is removed from the memory.
+- While using threads, each thread will have its own thread stack and help will be commonly used by all the threads. 
+- **Java Visual VM-** Using VisualVm we can track the java memory management, memory leaks, garbage collection and CPU profiling. While running the application visualvm will extract the data from JVM and map it on the user interface. VsualVM is by default available as part of JDK. jstat, jstack, jmap etc are the tools used by VisualVM.
 
 ## Java8 Features
 Main intention behind java8 is simplified code and to introduce functional programming.
