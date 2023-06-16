@@ -31,6 +31,8 @@ In Java thereare 2 types of memories i. Stack ii. Heap
 Main intention behind java8 is simplified code and to introduce functional programming.
 
 * **1. Lambda Expressions:** The main objective of lambda expression is to enable functional programming. Using lambda, we can pass procedure or behavior as an argument. We can also write more readable, maintainable and concise code. Also we can enable parallel processing. Lambdas can be used in a certain type of interfaces. We use interface as type for the lambda expression, that interface must contain only one abstract method i.e nothing but functional interface. Lambda expressions are also called as anonymous functions or closures. We can even pass lambda expressions as arguments to other functions.
+	- **Handling Exceptions in Lambda**
+		We can add try catch block directly inside the lambda expression. But when we are using multiple pipes, it will be difficult to handle it and the main theme of concise code in lambda will fail. We can write lambda wrapper methods to handle the exceptions in Generic way by passing the target value and expected exception.
 
 * **2. Functional Interfaces:** Functional interface is the one which contains only one abstract method. We can mark any interface with annotation @FunctionalInterface, so that it does not allow more than one abstract method.
 	1. java.util.Function - contains a bunch of predefined interfaces. Predicate,Consumer,Supplier etc.
@@ -49,6 +51,8 @@ Main intention behind java8 is simplified code and to introduce functional progr
 		i. Example of intermediate operators are map(), filter(), sorted(), flatMap(), distinct(), peek(), limit(), skip()
 		ii. Example of terminal operators are collect(), forEach(), reduce(), toArray(), count(), min(),max(), anyMatch(), allMatch(), noneMatch(), findAny(), findFirst()	
 	2. Steams feature provides many other provisions or methods to perform sortings, aggregations of data easily with concise code.
+	3. Diference between peek() and map() is map has Function as the argument where peek() has the Consumer as argument. Generally peek() is used for debugging while applying filters or any intermediate opertion on data, it is used for debugging to see how the stream is flowing.
+	4. Difference between map() and flatmap() is map is used for mapping the data where as flatmap() is used for mapping and flattering the data. When we have a collection map works to read the data, but when we have collection of collections, flatmap() is used for isting complete data.  
 
 * **6. Date and Time API (Joda API):** 
 	1. There are multiple issues with the existing date API, so in Java8 majority of them are addressed.
